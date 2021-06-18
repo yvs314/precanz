@@ -1,7 +1,7 @@
 # Precedence Constraints Analyzer, aka `precanz`
 
-## Authorship
-`MaxBipartiteMatching` is by _this good person_, and was available as a Haskell package.
+## Authorship and License
+`MaxBipartiteMatching` is by Stefan Klinger [https://stefan-klinger.de/](https://stefan-klinger.de/), and was available as a Haskell package.
 
 Everything else is by Yaroslav Salii
 
