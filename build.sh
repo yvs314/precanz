@@ -1,6 +1,6 @@
 echo "Imma placeholder build.sh"
 
-#ghc -o precanz -O processSOP.hs
+#ghc -o -O precanz processSOP.hs
 #rm -rf build
 #mkdir build
 #cd build
