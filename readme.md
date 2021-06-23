@@ -1,7 +1,7 @@
 # Precedence Constraints Analyzer
 Given a TSPLIB-compatible input file (.sop) encoding an instance of Precedence Constrained TSP (same as Sequential Ordering Problem), compute the _width_ of the partial order given by the precedence constraints, as well as its _transitive reduction_ and _density_.
 
-I wrote it to estimate if it was feasible to solve specific SOP instances of TSPLIB, and used it in (Salii, 2017)[https://www.researchgate.net/publication/318760355], (Salii, 2019)[https://doi.org/10.1016/j.ejor.2018.06.003], (Salii, Sheka, 2020)[https://doi.org/10.1080/10556788.2020.1817447], which led to finally finding the optimal solutions to `ry48p.3.sop` and `kro124p.4.sop`.
+I wrote it to estimate if it was feasible to solve specific SOP instances of TSPLIB, and used these estimates in (Salii, 2017)[https://www.researchgate.net/publication/318760355], (Salii, 2019)[https://doi.org/10.1016/j.ejor.2018.06.003], and (Salii, Sheka, 2020)[https://doi.org/10.1080/10556788.2020.1817447], which led to finally finding the optimal solutions to `ry48p.3.sop` and `kro124p.4.sop`.
 
 ### Auxiliary script `/aux/T2S.jl`
 
