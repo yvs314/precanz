@@ -6,7 +6,7 @@ I wrote it to estimate if it was feasible to solve specific instances of TSPLIB,
 
 ## Usage
 1. Compile it with `GHC`. See the template in `build.sh`.
-2. The executable (call it `precanz`) processes all `.sop` files in the directory it is run in. For each one, it outputs a `.sop.anz` plaintext report where it found the input `.sop`, and also a `.csv` with processing summary.
+2. The executable (call it `precanz`) processes all `.sop` files in the directory it is run in. For each one, it outputs a `.sop.anz` plaintext report where it found the input `.sop`. When it finishes, it also outputs a `.csv` processing summary, with each `.sop`'s _width_, _density_, etc.
 3. Expect it to take several minutes for the whole TSPLIB/SOPLIB06.
 
 ## Acknowledgements 
