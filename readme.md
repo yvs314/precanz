@@ -19,7 +19,7 @@ The Julia script `/aux/T2S.jl` transmutes SOPLIB06 files into TSPLIB format, wit
 ## Acknowledgements 
 The venerable TSPLIB is by George Reinelt, with SOP instances contributed by Norbert Ascheuer and Laureano Escudero. The authoritative link is (http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/); in this repo, the SOP instances are in `/data/TSPLIB-SOP`.
 
-SOPLIB06 is by Roberto Montemanni (roberto@idsia.ch).
+SOPLIB06 is by Roberto Montemanni (roberto@idsia.ch); in this repo, these are located in `/data/SOPLIB`, and when transmuted to TSPLIB-like format, in `/data/t-SOPLIB`.
 
 The `MaxBipartiteMatching` package (`Matcher.lhs` and `MaxBipartiteMatching.lhs`) is by Stefan Klinger [https://stefan-klinger.de/](https://stefan-klinger.de/), and was available under GNU AGPL v.3. I include it unpacked to simplify the compilation of `precanz`. 
 
