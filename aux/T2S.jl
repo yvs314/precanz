@@ -11,6 +11,11 @@ using DelimitedFiles #just to read the ingress SOPLIB06 .sop files
 
 sopDir = "SOPLIB"
 outDir = "t-SOPLIB"
+outPath = joinpath(".",outDir)
+rm(outPath, recursive=true, force=true) #trash the previous output
+mkpath(outPath) #create the output directory
+
+
 #get all filenames from ./$sopDir that end in "sop"
 sops = filter(s -> s[end-2:end]=="sop", readdir(sopDir))
 #now just stick all the working code into the *for* loop. Feels so dirty!
@@ -45,11 +50,10 @@ for ifName in sops
     
     # Writing prep
     ofName = ifName
-    outDir = "t-SOPLIB"
-    outPath = joinpath(".",outDir,ofName)
+    outFilePath = joinpath(outPath,ofName)
     
-    # Write $legend into $outPath
-    open(outPath,"w") do outFile
+    # Write $legend into $outFilePath
+    open(outFilePath,"w") do outFile
         write(outFile,legend)
     end
 end
