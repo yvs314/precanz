@@ -10,6 +10,10 @@ I wrote it to estimate if it was feasible to solve specific instances of TSPLIB,
 3. Expect it to take several minutes for the whole TSPLIB/SOPLIB06.
 
 ## Acknowledgements 
+The venerable TSPLIB is by George Reinelt, with SOP instances contributed by Norbert Ascheuer and Laureano Escudero. The authoritative link is (http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/); in this repo, the SOP instances are in `/data/TSPLIB-SOP`.
+
+SOPLIB06 is by Roberto Montemanni (roberto@idsia.ch).
+
 The `MaxBipartiteMatching` package (`Matcher.lhs` and `MaxBipartiteMatching.lhs`) is by Stefan Klinger [https://stefan-klinger.de/](https://stefan-klinger.de/), and was available under GNU AGPL v.3. I include it unpacked to simplify the compilation of `precanz`. 
 
 The implementation of _transitive closure_ is based on the functional version of the Roy–Warshall algorithm, see the details in (Berghammer, Fisher, 2015)[https://doi.org/10.1016/j.jlamp.2014.08.003].
