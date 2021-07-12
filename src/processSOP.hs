@@ -11,7 +11,7 @@ import Text.Printf
 Vx :: Int --- for numbering and counting vertices,
 i.e., the elements ordered
 
-Output format discription: $Type denotes a String that expresses 
+Output format description: $Type denotes a String that expresses 
 (--> show) the Type
 
 NAME: $String
@@ -88,7 +88,6 @@ dumpResults (name, outss) = writeFile (name ++ ".anz") (unlines outss)
 {-
 aggregated output format:
 NAME:SUPPORT_SIZE:PAIRS_COUNT:TRANSITIVE_REDUCTION_SIZE:TRANSITIVE_CLOSURE_SIZE:DENSITY:WIDTH
-
 -}
 
 -- | dump results into $name.sop.anz
@@ -115,10 +114,9 @@ main = do
     writeFile "precAnz.csv" (mkCsvOut outLt)
     mapM dumpResults namedOut
     --dumpResults 
-    print $ namedOutLt
+    print namedOutLt
     return namedOutLt
 
---todo=["ry48p.4.sop","ry48p.3.sop","ry48p.2.sop","ry48p.1.sop","rbg378a.sop","rbg358a.sop","rbg341a.sop","rbg323a.sop","rbg253a.sop","rbg174a.sop","rbg150a.sop","rbg109a.sop","rbg050c.sop","rbg048a.sop","prob.42.sop","prob.100.sop","p43.4.sop","p43.3.sop","p43.2.sop","p43.1.sop","kro124p.4.sop","kro124p.3.sop","kro124p.2.sop","kro124p.1.sop","ft70.4.sop","ft70.3.sop","ft70.2.sop","ft70.1.sop","ft53.4.sop","ft53.3.sop","ft53.2.sop","ft53.1.sop","ESC78.sop","ESC63.sop","ESC47.sop","ESC25.sop","ESC12.sop","ESC11.sop","ESC07.sop","br17.12.sop","br17.10.sop"]
 
 -- | without "heavy" information --- no pairs' listings, etc.
 sopAnzLt:: String -> [String]
